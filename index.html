@@ -1,0 +1,83 @@
+<html>
+    <head>
+<!-- Browser tab text. -->
+        <title>
+            Icon Assignment | Neo
+        </title>
+<!-- Adding sound effects with Buzz library. -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+       
+<!-- Styling for grid margins. -->
+       <style>
+            .row{
+                width: 720px;
+                margin: 20px auto 20px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+
+    </head>
+<!-- Page colour. -->
+    <body style="background-color: rgb(249, 250, 241);">
+<!--Top row.-->
+        <div class="row">
+            <div class="image-container"> <img id="Train1" src="imgs/Train Main.png" width="200", height="200"/> </div>
+            <!-- <img id="Train2" src="imgs/Train Alt.png" width="200", height="200"/> -->
+            <div class="image-container"> <img id="Tram1" src="imgs/Tram Main.png" width="200", height="200"/> </div>
+            <!-- <img id="Tram2" src="imgs/Tram Alt.png" width="200", height="200"/> -->
+            <div class="image-container"> <img id="Bus1" src="imgs/Bus Main.png" width="200", height="200"/> </div>
+            <!-- <img id="Bus2" src="imgs/Bus Alt.png" width="200", height="200"/> -->
+        </div>
+<!--Middle row.-->
+        <div class="row">
+            <div class="image-container"> <img id="Journey1" src="imgs/Journey Main.png" width="200", height="200"/> </div>
+            <!-- <img id="Journey2" src="imgs/Journey Alt.png" width="200", height="200"/> -->
+            <div class="image-container"> <img id="Disruption1" src="imgs/Disruption Main.png" width="200", height="200"/> </div>
+            <!-- <img id="Disruption2" src="imgs/Disruption Alt.png" width="200", height="200"/> -->
+            <div class="image-container"> <img id="Magnifier1" src="imgs/Magnifier Main.png" width="200", height="200"/> </div>
+            <!-- <img id="Magnifier2" src="imgs/Magnifier Alt.png" width="200", height="200"/> -->
+        </div>
+<!--Bottom row.-->
+        <div class="row">
+            <div class="image-container"> <img id="Calendar1" src="imgs/Calendar Main.png" width="200", height="200"/> </div>
+            <!-- <img id="Calendar2" src="imgs/Calendar Alt.png" width="200", height="200"/> -->
+            <div class="image-container"> <img id="Clock1" src="imgs/Clock Main.png" width="200", height="200"/> </div>
+            <!-- <img id="Clock2" src="imgs/Clock Alt.png" width="200", height="200"/> -->
+            <div class="image-container"> <img id="Fare1" src="imgs/Fare Main.png" width="200", height="200"/> </div>
+            <!-- <img id="Fare2" src="imgs/Fare Alt.png" width="200", height="200"/> -->
+        </div>
+        
+<!-- Sound statements. -->
+        <script>
+            var TrainSound = new buzz.sound("sounds/Train.wav");
+            var TramSound = new buzz.sound("sounds/Tram.mp3");
+            var BusSound = new buzz.sound("sounds/Bus.wav");
+            var JourneySound = new buzz.sound("sounds/Journey.mp3");
+            var DisruptionSound = new buzz.sound("sounds/Disruption.wav");
+            var MagnifierSound = new buzz.sound("sounds/Magnifier.wav");
+            var CalendarSound = new buzz.sound("sounds/Calendar.wav");
+            var ClockSound = new buzz.sound("sounds/Clock.wav");
+            var FareSound = new buzz.sound("sounds/Fare.wav");
+
+// Cursor event listener for [sound on click].   
+            window.onload = function() {
+                document.getElementById('Train1').addEventListener('click', function () {TrainSound.play();});
+                document.getElementById('Tram1').addEventListener('click', function () {TramSound.play();});
+                document.getElementById('Bus1').addEventListener('click', function () {BusSound.play();});
+                document.getElementById('Journey1').addEventListener('click', function () {JourneySound.play();});
+                document.getElementById('Disruption1').addEventListener('click', function () {DisruptionSound.play();});
+                document.getElementById('Magnifier1').addEventListener('click', function () {MagnifierSound.play();});
+                document.getElementById('Calendar1').addEventListener('click', function () {CalendarSound.play();});
+                document.getElementById('Clock1').addEventListener('click', function () {ClockSound.play();});
+                document.getElementById('Fare1').addEventListener('click', function () {FareSound.play();});
+            };
+        </script>
+
+<!--Cursor event listener for [imageswap on hover].-->
+<img onmouseover="Train1" onmouseout="Train2" border="0" src="smiley.gif" alt="Smiley" width="200" height="200">
+    </body>
+</html>
