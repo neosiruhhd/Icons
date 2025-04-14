@@ -25,30 +25,21 @@
     <body style="background-color: rgb(249, 250, 241);">
 <!--Top row.-->
         <div class="row">
-            <div class="image-container"> <img id="Train1" src="imgs/Train Main.png" width="200", height="200"/> </div>
-            <!-- <img id="Train2" src="imgs/Train Alt.png" width="200", height="200"/> -->
-            <div class="image-container"> <img id="Tram1" src="imgs/Tram Main.png" width="200", height="200"/> </div>
-            <!-- <img id="Tram2" src="imgs/Tram Alt.png" width="200", height="200"/> -->
-            <div class="image-container"> <img id="Bus1" src="imgs/Bus Main.png" width="200", height="200"/> </div>
-            <!-- <img id="Bus2" src="imgs/Bus Alt.png" width="200", height="200"/> -->
+            <div class="image-container"> <img id="Train1" src="imgs/Train Main.png" onmouseover="this.src='imgs/Train Alt.png';" onmouseout="this.src='imgs/Train Main.png'" width="200", height="200"/> </div>
+            <div class="image-container"> <img id="Tram1" src="imgs/Tram Main.png" onmouseover="this.src='imgs/Tram Alt.png';" onmouseout="this.src='imgs/Tram Main.png'" width="200", height="200"/> </div>
+            <div class="image-container"> <img id="Bus1" src="imgs/Bus Main.png" onmouseover="this.src='imgs/Bus Alt.png';" onmouseout="this.src='imgs/Bus Main.png'" width="200", height="200"/> </div>
         </div>
 <!--Middle row.-->
         <div class="row">
-            <div class="image-container"> <img id="Journey1" src="imgs/Journey Main.png" width="200", height="200"/> </div>
-            <!-- <img id="Journey2" src="imgs/Journey Alt.png" width="200", height="200"/> -->
-            <div class="image-container"> <img id="Disruption1" src="imgs/Disruption Main.png" width="200", height="200"/> </div>
-            <!-- <img id="Disruption2" src="imgs/Disruption Alt.png" width="200", height="200"/> -->
-            <div class="image-container"> <img id="Magnifier1" src="imgs/Magnifier Main.png" width="200", height="200"/> </div>
-            <!-- <img id="Magnifier2" src="imgs/Magnifier Alt.png" width="200", height="200"/> -->
+            <div class="image-container"> <img id="Journey1" src="imgs/Journey Main.png" onmouseover="this.src='imgs/Journey Alt.png';" onmouseout="this.src='imgs/Journey Main.png'" width="200", height="200"/> </div>
+            <div class="image-container"> <img id="Disruption1" src="imgs/Disruption Main.png" onmouseover="this.src='imgs/Disruption Alt.png';" onmouseout="this.src='imgs/Disruption Main.png'" width="200", height="200"/> </div>
+            <div class="image-container"> <img id="Magnifier1" src="imgs/Magnifier Main.png" onmouseover="this.src='imgs/Magnifier Alt.png';" onmouseout="this.src='imgs/Magnifier Main.png'" width="200", height="200"/> </div>
         </div>
 <!--Bottom row.-->
         <div class="row">
-            <div class="image-container"> <img id="Calendar1" src="imgs/Calendar Main.png" width="200", height="200"/> </div>
-            <!-- <img id="Calendar2" src="imgs/Calendar Alt.png" width="200", height="200"/> -->
-            <div class="image-container"> <img id="Clock1" src="imgs/Clock Main.png" width="200", height="200"/> </div>
-            <!-- <img id="Clock2" src="imgs/Clock Alt.png" width="200", height="200"/> -->
-            <div class="image-container"> <img id="Fare1" src="imgs/Fare Main.png" width="200", height="200"/> </div>
-            <!-- <img id="Fare2" src="imgs/Fare Alt.png" width="200", height="200"/> -->
+            <div class="image-container"> <img id="Calendar1" src="imgs/Calendar Main.png" onmouseover="this.src='imgs/Calendar Alt.png';" onmouseout="this.src='imgs/Calendar Main.png'" width="200", height="200"/> </div>
+            <div class="image-container"> <img id="Clock1" src="imgs/Clock Main.png" onmouseover="this.src='imgs/Clock Alt.png';" onmouseout="this.src='imgs/Clock Main.png'" width="200", height="200"/> </div>
+            <div class="image-container"> <img id="Fare1" src="imgs/Fare Main.png" onmouseover="this.src='imgs/Fare Alt.png';" onmouseout="this.src='imgs/Fare Main.png'" width="200", height="200"/> </div>
         </div>
         
 <!-- Sound statements. -->
@@ -77,7 +68,5 @@
             };
         </script>
 
-<!--Cursor event listener for [imageswap on hover].-->
-<!-- <img onmouseover="Train1" onmouseout="Train2" border="0" src="smiley.gif" alt="Smiley" width="200" height="200"> -->
     </body>
 </html>
